@@ -24,7 +24,7 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty."
   } else {
     for ( let i = 1; i < katzDeliLine.length; i++) {
-      
+
       return `The line is currently: ${katzDeliLine}`
     }
   }
