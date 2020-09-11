@@ -26,6 +26,6 @@ function currentLine(katzDeliLine) {
     for ( let i = 1; i <= katzDeliLine.length; i++ ) {
         constant += `${i}. ${katzDeliLine[i]}`
     }
-    return constant 
+    return constant
   }
 }
