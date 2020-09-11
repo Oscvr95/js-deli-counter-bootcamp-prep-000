@@ -19,14 +19,15 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-    var constant = "The line is currently: "
+  var arr1 = []
+  var constant = "The line is currently: "
   if (katzDeliLine.length === 0) {
     return "The line is currently empty."
   } else {
     for ( let i = 0; i < katzDeliLine.length; i++ ) {
 
-        constant += `${i + 1}. ${katzDeliLine[i]}, `
+        arr1.push(`${i + 1}. ${katzDeliLine[i]}`) 
     }
-    return constant
+    return constant + arr1.join(", ")
   }
 }
